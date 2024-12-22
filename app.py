@@ -9,6 +9,11 @@ import pickle
 
 
 
+# Download required NLTK data
+nltk.download('punkt')
+
+
+
 # Import your sections
 
 from home import home_section # Assuming home.py is present
