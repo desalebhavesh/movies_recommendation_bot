@@ -1,3 +1,11 @@
+import nltk
+try:
+    nltk.data.find('tokenizers/punkt')
+except LookupError:
+    nltk.download('punkt')
+
+
+
 import streamlit as st
 import random
 import json
