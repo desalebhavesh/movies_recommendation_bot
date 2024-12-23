@@ -1,9 +1,9 @@
 import nltk
-try:
-    nltk.data.find('tokenizers/punkt')
-except LookupError:
-    nltk.download('punkt')
 
+# Force download without checking
+nltk.download('punkt')
+nltk.download('wordnet')
+nltk.download('omw-1.4')
 
 
 import streamlit as st
