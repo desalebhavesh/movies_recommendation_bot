@@ -5,6 +5,18 @@ import numpy as np
 import tensorflow as tf 
 import nltk
 from nltk.stem import WordNetLemmatizer
+import re
+# Load intents
+with open('intent.json', 'r') as file:
+    intents = json.load(file)
+
+def chatbot_response(user_input):
+    for intent in intents['intents']:
+        for pattern in intent['patterns']:
+            if re.search(pattern, user_input, re.IGNORECASE):
+                return intent['responses'][0]  # Respond with the first response
+    return "Sorry, I didn't understand that."
+
 
 # Initialize the lemmatizer
 lemmatizer = WordNetLemmatizer()
