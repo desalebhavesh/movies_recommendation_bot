@@ -5,6 +5,10 @@ nltk.download('punkt')
 nltk.download('wordnet')
 nltk.download('omw-1.4')
 
+import os
+
+
+
 
 import streamlit as st
 import random
