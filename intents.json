@@ -71,6 +71,24 @@
         "patterns": ["Trending movies", "What are the top trending movies?", "List the trending movies now"],
         "responses": ["Here are the top trending movies right now: \n- Oppenheimer\n- Barbie\n- The Marvels"],
         "context": ["trending"]
+      },
+        {
+        "tag": "movie_genre",
+        "patterns": ["Recommend some action movies", "I like comedies, any suggestions?", "List some romantic movies", "Find me a horror movie", "Show me thriller movies"],
+        "responses": ["Here are some action-packed movies: \n- Mad Max: Fury Road\n- Die Hard\n- John Wick", "Looking for laughs? Try these comedies: \n- The Hangover\n- Superbad\n- Step Brothers"],
+        "context": ["genre"]
+      },
+      {
+        "tag": "award_winning_movies",
+        "patterns": ["Oscar-winning movies", "Show me award-winning films", "Which movies have won awards?", "List some critically acclaimed movies"],
+        "responses": ["Here are some Oscar-winning movies: \n- The Shape of Water\n- Parasite\n- Gladiator"],
+        "context": ["award_winning"]
+      },
+      {
+        "tag": "family_friendly_movies",
+        "patterns": ["Family movies", "Show me movies for kids", "List some family-friendly films", "Can you suggest movies for kids?"],
+        "responses": ["Here are some family-friendly movies: \n- The Lion King\n- Frozen\n- Toy Story"],
+        "context": ["family"]
       }
     ]
   }
